@@ -21,7 +21,7 @@ const Hero = () => {
 
           <ScrollReveal delay={100}>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl text-primary-foreground leading-[1.08] mb-6" style={{ lineHeight: 1.08 }}>
-              Tu inmobiliaria funciona sola mientras tú cierras ventas.
+              Tu inmobiliaria funciona sola mientras tú cierras ventas
             </h1>
           </ScrollReveal>
 

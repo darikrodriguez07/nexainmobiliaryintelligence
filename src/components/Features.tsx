@@ -1,36 +1,21 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import { Bot, Zap, BarChart3, MessageSquare, Calendar, Shield } from "lucide-react";
+import { ListCheck, Zap, BarChart3, MessageSquare, Calendar, Shield, Phone } from "lucide-react";
 
 const features = [
   {
-    icon: Bot,
-    title: "Captación Automática",
-    desc: "La IA recoge leads de portales, web y redes sociales y los registra en tu CRM sin intervención manual.",
+    icon: Phone,
+    title: "Auditoria personalizada",
+    desc: "Estudiamos tu negocio y te mostramos una versión simple personalizada de cómo el sistema capta clientes desde tu web, guarda sus datos y agenda citas automáticamente.",
   },
   {
-    icon: MessageSquare,
-    title: "Seguimiento por WhatsApp",
-    desc: "Respuestas instantáneas y seguimiento personalizado a cada lead vía WhatsApp, email y SMS.",
+    icon: ListCheck,
+    title: "Gestión de clientes",
+    desc: "Instalamos un sistema que responde automáticamente a tus clientes, recoge sus datos y los clasifica según sus intereses para ayudarte a gestionar mejor cada oportunidad.",
   },
   {
     icon: Zap,
-    title: "Cualificación Inteligente",
-    desc: "Algoritmos que puntúan cada contacto según urgencia, presupuesto y zona de interés.",
-  },
-  {
-    icon: Calendar,
-    title: "Agenda de Visitas",
-    desc: "Programación automática de visitas coordinando disponibilidad del agente y el cliente.",
-  },
-  {
-    icon: BarChart3,
-    title: "Panel de Rendimiento",
-    desc: "Métricas en tiempo real de tu embudo: conversión, tiempo de respuesta y productividad por agente.",
-  },
-  {
-    icon: Shield,
-    title: "Cumplimiento RGPD",
-    desc: "Gestión automática de consentimientos y datos personales conforme a la normativa europea.",
+    title: "Sistema completo",
+    desc: "Instalamos un sistema completo que capta clientes, responde automáticamente, organiza sus datos, agenda citas y realiza seguimiento por WhatsApp, para que tú solo te centres en cerrar ventas.",
   },
 ];
 
