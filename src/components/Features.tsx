@@ -1,5 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import { ListCheck, Zap, BarChart3, MessageSquare, Calendar, Shield, Phone } from "lucide-react";
+import { ListCheck, Zap, Settings, Phone } from "lucide-react";
 
 const features = [
   {
@@ -16,6 +16,11 @@ const features = [
     icon: Zap,
     title: "Sistema completo",
     desc: "Instalamos un sistema completo que capta clientes, responde automáticamente, organiza sus datos, agenda citas y realiza seguimiento por WhatsApp, para que tú solo te centres en cerrar ventas.",
+  },
+  {
+    icon: Settings,
+    title: "Mantenimiento",
+    desc: "Nos encargamos de que tu sistema funcione siempre correctamente, realizando ajustes, mejoras y soporte continuo para que sigas captando clientes sin preocuparte por lo técnico."
   },
 ];
 
