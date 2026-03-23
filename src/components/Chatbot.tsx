@@ -161,8 +161,8 @@ const Chatbot = () => {
           <X className="w-6 h-6" />
         ) : (
           <>
-            <MessageCircle className="w-5 h-5" />
             <span className="text-sm font-medium">¿Alguna duda?</span>
+            <MessageCircle className="w-5 h-5" />
           </>
         )}
       </button>
@@ -176,7 +176,7 @@ const Chatbot = () => {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <p className="font-semibold text-sm">NEXA Asistente</p>
+              <p className="font-semibold text-sm">Asistente de NEXA</p>
               <p className="text-xs text-primary-foreground/60">En línea</p>
             </div>
           </div>
@@ -226,7 +226,7 @@ const Chatbot = () => {
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-xl px-4 py-3 text-sm font-medium hover:bg-primary/90 transition-colors active:scale-[0.97]"
                 >
                   <Calendar className="w-4 h-4" />
-                  Agendar Reunión en Calendly
+                  Agenda tu reunión!
                 </a>
               </div>
             )}

@@ -16,7 +16,16 @@ const Navbar = () => {
           <a href="#funciones" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Funciones</a>
           <a href="#proceso" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Proceso</a>
           <a href="#resultados" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Resultados</a>
-          <Button variant="hero" size="default">Agendar Reunión</Button>
+          <Button variant="hero" size="default">
+            <a
+            href="https://calendly.com/darikrodriguez-07/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3"
+            >
+            Agendar Reunión
+            </a>
+          </Button>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -29,7 +38,16 @@ const Navbar = () => {
           <a href="#funciones" className="block text-sm text-muted-foreground" onClick={() => setOpen(false)}>Funciones</a>
           <a href="#proceso" className="block text-sm text-muted-foreground" onClick={() => setOpen(false)}>Proceso</a>
           <a href="#resultados" className="block text-sm text-muted-foreground" onClick={() => setOpen(false)}>Resultados</a>
-          <Button variant="hero" size="default" className="w-full">Agendar Reunión</Button>
+          <Button variant="hero" size="default" className="w-full">
+            <a
+              href="https://calendly.com/darikrodriguez-07/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3"
+            >
+            Agendar Reunión
+            </a>
+          </Button>
         </div>
       )}
     </nav>
