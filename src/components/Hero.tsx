@@ -44,7 +44,14 @@ const Hero = () => {
                 </a>
               </Button>
               <Button variant="hero-outline" size="xl" className="border-secondary/60 text-secondary hover:bg-secondary hover:text-secondary-foreground">
+                <a
+                  href="https://www.youtube.com/watch?v=cgNTtM44-Dk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3"
+                >
                 Ver Cómo Funciona
+                </a>
               </Button>
             </div>
           </ScrollReveal>
