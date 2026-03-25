@@ -6,6 +6,9 @@ const CursorGlow = () => {
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
+    // ✅ Detectar móvil por ancho de pantalla
+    if (window.innerWidth < 768) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       pos.current = { x: e.clientX, y: e.clientY };
 
@@ -27,13 +30,18 @@ const CursorGlow = () => {
     };
   }, []);
 
+  // ❌ No renderizar en móvil
+  if (typeof window !== "undefined" && window.innerWidth < 768) {
+    return null;
+  }
+
   return (
     <div
       ref={glowRef}
       className="pointer-events-none fixed top-0 left-0 z-50"
       style={{ transform: "translate(0px, 0px)" }}
     >
-      <div className="w-5 h-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/100 blur-md" />
+      <div className="w-40 h-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-2xl" />
     </div>
   );
 };
