@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import { ListCheck, Zap, Settings, Phone } from "lucide-react";
+import React from "react";
 
 const features = [
   {
@@ -34,7 +35,9 @@ const Features = () => {
       <div className="container mx-auto px-6">
         <ScrollReveal>
           <div className="text-center max-w-xl mx-auto mb-16">
-            <span className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">Funciones</span>
+            <span className="text-sm font-semibold tracking-widest uppercase text-muted-foreground">
+              Servicios
+            </span>
             <h2 className="text-3xl lg:text-4xl text-foreground mt-3 mb-4">
               Todo lo que tu agencia necesita, automatizado
             </h2>
@@ -44,32 +47,41 @@ const Features = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((f, i) => {
-            const isHighTicket = i === 1;
-            const isMaintenance = i === 3;
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((f, i) => {
+                const isHighTicket = i === 1;
+                const isMaintenance = i === 3;           
 
-            return (
-              <ScrollReveal key={f.title} delay={i * 80} animation="scale">
-                <div
-                  className={`group rounded-xl p-7 transition-all duration-300
-                    ${isHighTicket 
-                      ? "bg-primary text-white shadow-lg scale-105 border border-primary/30" 
-                      : isMaintenance 
-                        ? "bg-muted/40 opacity-80 hover:opacity-100" 
-                        : "bg-background shadow-sm shadow-primary/5 hover:shadow-md hover:shadow-primary/10"
-                    }
-                  `}
-                >
+               return (
+                  <ScrollReveal key={f.title} delay={i * 80} animation="scale">
+            <div
+              className={`group relative overflow-hidden rounded-xl p-7 transition-all duration-300
+              hover:-translate-y-1 hover:scale-[1.02]
+              ${isHighTicket 
+                ? "bg-primary text-white shadow-lg scale-105 border border-primary/30" 
+                : isMaintenance 
+                  ? "bg-muted/40 opacity-80 hover:opacity-100" 
+                  : "bg-background shadow-sm shadow-primary/5 hover:shadow-md hover:shadow-primary/10"
+             }`}
+           >
+                  {/* 🔥 Borde brillante */}
+                  <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-primary/50 transition-all duration-300 pointer-events-none"></div>
+
+                  {/* ✨ Glow */}
+                  <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none blur-md bg-primary/10"></div>
+
+                  {/* 💎 Gradiente animado suave */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none rounded-xl bg-gradient-to-r from-primary/0 via-primary/20 to-primary/0 animate-[pulse_2s_infinite]"></div>
+
                   <div
                     className={`w-11 h-11 rounded-lg flex items-center justify-center mb-5 transition-colors
-                      ${isHighTicket 
-                        ? "bg-white/20" 
-                        : isMaintenance 
-                          ? "bg-muted" 
+                      ${
+                        isHighTicket
+                          ? "bg-white/20"
+                          : isMaintenance
+                          ? "bg-muted"
                           : "bg-primary/10 group-hover:bg-primary/15"
-                      }
-                    `}
+                      }`}
                   >
                     <f.icon
                       className={`w-5 h-5 ${
@@ -81,7 +93,7 @@ const Features = () => {
                   {isHighTicket && (
                     <div className="mb-3">
                       <span className="text-xs font-semibold bg-white/20 px-3 py-1 rounded-full">
-                        Más recomendado
+                        Más popular
                       </span>
                     </div>
                   )}
@@ -96,7 +108,7 @@ const Features = () => {
 
                   <p
                     className={`text-sm font-semibold mb-2 ${
-                    isHighTicket ? "text-white/90" : "text-muted-foreground"
+                      isHighTicket ? "text-white/90" : "text-muted-foreground"
                     }`}
                   >
                     {f.price}

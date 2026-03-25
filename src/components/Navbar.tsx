@@ -13,7 +13,7 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#funciones" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Funciones</a>
+          <a href="#funciones" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Servicios</a>
           <a href="#proceso" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Proceso</a>
           <a href="#resultados" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Resultados</a>
           <Button variant="hero" size="default">
