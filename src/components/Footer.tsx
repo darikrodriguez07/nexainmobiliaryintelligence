@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex gap-6 text-sm text-primary-foreground/50">
             <a href="https://raw.githubusercontent.com/darikrodriguez07/nexastateintelligence/main/Privacidad.pdf" target="_blank" className="hover:text-primary-foreground/80 transition-colors"></a>
             <a href="https://www.instagram.com/nexa.inmoai/"target="_blank" className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"><Instagram className="w-4 h-4"/>Nexa.inmoAI</a>
-            <a href="mailto:darikrodriguez.07@gmail.com" target="_blank"className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"><Mail className="w-4 h-4"/>info@nexainmolligence.com</a>
+            <a href="mailto:nexainmobiliaryintelligence@gmail.com" target="_blank"className="flex items-center gap-2 hover:text-primary-foreground/80 transition-colors"><Mail className="w-4 h-4"/>info@nexainmolligence.com</a>
           </div>
           <p className="text-xs text-primary-foreground/40">© 2026 NEXA Inmobiliary Intelligence. Todos los derechos reservados.</p>
         </div>

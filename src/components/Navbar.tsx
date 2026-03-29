@@ -18,7 +18,7 @@ const Navbar = () => {
           <a href="#resultados" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Resultados</a>
           <Button variant="hero" size="default">
             <a
-            href="https://calendly.com/darikrodriguez-07/30min"
+            href="https://calendly.com/nexainmointelligence/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3"
@@ -40,7 +40,7 @@ const Navbar = () => {
           <a href="#resultados" className="block text-sm text-muted-foreground" onClick={() => setOpen(false)}>Resultados</a>
           <Button variant="hero" size="default" className="w-full">
             <a
-              href="https://calendly.com/darikrodriguez-07/30min"
+              href="https://calendly.com/nexainmointelligence/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3"

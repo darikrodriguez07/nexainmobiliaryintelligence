@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, Calendar } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
-const CALENDLY_URL = "https://calendly.com/darikrodriguez-07/30min";
+const CALENDLY_URL = "https://calendly.com/nexainmointelligence/30min";
 const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`;
 
 type Msg = { role: "user" | "assistant"; content: string };

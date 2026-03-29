@@ -16,7 +16,7 @@ const CTA = () => {
             </p>
           <Button asChild variant="hero" size="xl">
           <a
-           href="https://calendly.com/darikrodriguez-07/30min"
+           href="https://calendly.com/nexainmointelligence/30min"
            target="_blank"
            rel="noopener noreferrer"
            className="flex items-center gap-3"
