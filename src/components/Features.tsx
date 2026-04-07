@@ -11,19 +11,19 @@ const features = [
   {
     icon: Zap,
     title: "Sistema completo de automatización",
-    desc: "Instalamos un sistema completo que capta clientes, responde automáticamente, organiza sus datos, agenda citas y realiza seguimiento por WhatsApp, para que tú solo te centres en cerrar ventas.",
+    desc: "Instalamos un sistema completo que clasifica tus clientes, agenda citas automaticas, añade recordatorios, inlcuye notificaciones personalizadas para tus propios agentes y te muestra en que etapa se encuentra cada cliente. Además, busca clientes para rellenar huecos en caso de que un cliente cancele una cita.",
     price: "1000€"
   },
   {
     icon: ListCheck,
     title: "Automatización básica de clientes",
-    desc: "Instalamos un sistema que responde automáticamente a tus clientes, recoge sus datos y los clasifica según sus intereses para ayudarte a gestionar mejor cada oportunidad.",
-    price: "200€"
+    desc: "Instalamos un sistema que incluye una base de datos de clientes, recordatorios a tus clientes y agenda citas automaticamente.",
+    price: "400€"
   },
   {
     icon: Settings,
-    title: "Mantenimiento",
-    desc: "Nos encargamos de que tu sistema funcione siempre correctamente, realizando ajustes, mejoras y soporte continuo para que sigas captando clientes sin preocuparte por lo técnico.",
+    title: "Soporte",
+    desc: "Los servicios incluyen un soporte mensual para no sentirte solo ante nuestro sistema, también incluye una clase en la que explicamos sencillamente como funciona para que no quede ninguna duda.",
     price: "100€/mes"
   },
 ];
@@ -96,14 +96,6 @@ const Features = () => {
                       </span>
                     </div>
                   )}
-                  {isMaintenance && (
-                    <div className="mb-3">
-                      <span className="text-xs font-semibold bg-white/20 px-3 py-1">
-                        Opcional
-                      </span>
-                    </div>
-                  )}
-
                   <h3
                     className={`font-serif text-lg mb-2 ${
                       isHighTicket ? "text-white" : "text-foreground"
